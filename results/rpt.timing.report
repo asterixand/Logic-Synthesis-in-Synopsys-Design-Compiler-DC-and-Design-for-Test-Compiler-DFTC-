@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : johnson
+Version: L-2016.03-SP5-5
+Date   : Mon Aug 13 07:27:05 2018
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: out_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  johnson            ForQA                 saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  out_reg[7]/CK (SAEDRVT14_FDPRBQ_V2_0P5)                 0.00       0.00 r
+  out_reg[7]/Q (SAEDRVT14_FDPRBQ_V2_0P5)                  0.04       0.04 r
+  out[7] (out)                                            0.00       0.04 r
+  data arrival time                                                  0.04
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.00       2.00
+  clock uncertainty                                      -0.30       1.70
+  output external delay                                  -1.20       0.50
+  data required time                                                 0.50
+  --------------------------------------------------------------------------
+  data required time                                                 0.50
+  data arrival time                                                 -0.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+1

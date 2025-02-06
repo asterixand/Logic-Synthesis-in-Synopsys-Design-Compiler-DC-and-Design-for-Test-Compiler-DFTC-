@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 13:59:22 2025
+****************************************
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+  Startpoint: SCANINPORT (input port clocked by clk)
+  Endpoint: out_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  johnson            ForQA                 saed14rvt_tt0p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                  250.00     250.00 r
+  SCANINPORT (in)                                         0.00     250.00 r
+  out_reg[0]/SI (SAEDRVT14_FSDPRBQ_V2_1)                  0.01     250.01 r
+  data arrival time                                                250.01
+
+  clock clk (rise edge)                                1000.00    1000.00
+  clock network delay (ideal)                             0.00    1000.00
+  clock uncertainty                                      -0.30     999.70
+  out_reg[0]/CK (SAEDRVT14_FSDPRBQ_V2_1)                  0.00     999.70 r
+  library setup time                                     -0.01     999.69
+  data required time                                               999.69
+  --------------------------------------------------------------------------
+  data required time                                               999.69
+  data arrival time                                               -250.01
+  --------------------------------------------------------------------------
+  slack (MET)                                                      749.68
+
+
+1
