@@ -1,0 +1,1212 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : design
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 11:47:45 2025
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db)
+
+Local Link Library:
+
+    {../ref/db_nldm/saed14rvt_tt0p8v25c.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt0p8v25c
+    Library : saed14rvt_tt0p8v25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   0.80
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ForQA
+Location       :   saed14rvt_tt0p8v25c
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     8.28
+     2    18.49
+     3    29.35
+     4    40.92
+     5    53.23
+     6    66.36
+     7    80.36
+     8    95.27
+     9   111.17
+    10   128.09
+    11   146.10
+    12   165.26
+    13   185.61
+    14   207.22
+    15   230.13
+    16   254.41
+    17   280.11
+    18   307.28
+    19   335.98
+    20   366.27
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+        -from ...
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 11:57:17 2025
+****************************************
+
+ 
+****************************************
+Report : hierarchy
+        -noleaf
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 11:59:11 2025
+****************************************
+
+johnson
+Warning: Can't find port 'johnson' in design 'johnson'. (UID-95)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+ 
+****************************************
+Report : clocks
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:00:26 2025
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk              2.00   {0 1}                         {clk}
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : clock_skew
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:00:26 2025
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk                 -         -         -         -      0.30      0.30
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.05      0.05      0.05      0.05
+
+
+Clock Groups :
+
+Total logically exclusive groups: 0
+
+Total physically exclusive groups: 0
+
+Total asynchronous groups: 0
+
+Warning: Can't find net 'johnson' in design 'johnson'. (UID-95)
+Error: Value for list '<net_list>' must have 1 elements. (CMD-036)
+Warning: Can't find object 'johnson' in design 'johnson'. (UID-95)
+Error: Value for list 'cell_list' must have 1 elements. (CMD-036)
+ 
+****************************************
+Report : compile_options
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:03:53 2025
+****************************************
+
+Design                                   Compile Option         Value
+--------------------------------------------------------------------------------
+johnson                                  flatten                false
+                                         structure              true
+                                         structure_boolean      false
+                                         structure_timing       true
+                                         isolate_port           disabled
+                                         multibit_options
+                                           optimization_mode    non_timing_driven
+                                           minimum_width        2
+                                           exclude_registers_with_timing_exceptions false
+--------------------------------------------------------------------------------
+ 
+****************************************
+Report : area
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:05:40 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db)
+
+Number of ports:                           10
+Number of nets:                            12
+Number of cells:                           10
+Number of combinational cells:              2
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          2
+Number of references:                       2
+
+Combinational area:                  0.355200
+Buf/Inv area:                        0.355200
+Noncombinational area:               8.524800
+Macro/Black Box area:                0.000000
+Net Interconnect area:               3.550286
+
+Total cell area:                     8.880000
+Total area:                         12.430287
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+johnson                              8.8800    100.0    0.3552     8.5248  0.0000  johnson
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                   0.3552     8.5248  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+Loading db file '/net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db'
+Information: Propagating switching activity (medium effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort medium
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:07:25 2025
+****************************************
+
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db)
+
+
+Operating Conditions: tt0p8v25c   Library: saed14rvt_tt0p8v25c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+johnson                ForQA             saed14rvt_tt0p8v25c
+
+
+Global Operating Voltage = 0.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.6703 uW   (95%)
+  Net Switching Power  = 220.6396 nW    (5%)
+                         ---------
+Total Dynamic Power    =   4.8910 uW  (100%)
+
+Cell Leakage Power     =   3.6304 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           4.6691        9.0366e-02        3.4535e+03            4.7629  (  97.31%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.2820e-03            0.1303          176.8798            0.1317  (   2.69%)
+--------------------------------------------------------------------------------------------------
+Total              4.6703 uW         0.2206 uW     3.6304e+03 pW         4.8946 uW
+ 
+****************************************
+Report : wire loads
+          -libraries
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:10:59 2025
+****************************************
+
+Wire load model:   ForQA
+Location       :   johnson (design)
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1     8.28                                    
+     2    18.49                                    
+     3    29.35                                    
+     4    40.92                                    
+     5    53.23                                    
+     6    66.36                                    
+     7    80.36                                    
+     8    95.27                                    
+     9   111.17                                    
+    10   128.09                                    
+    11   146.10                                    
+    12   165.26                                    
+    13   185.61                                    
+    14   207.22                                    
+    15   230.13                                    
+    16   254.41                                    
+    17   280.11                                    
+    18   307.28                                    
+    19   335.98                                    
+    20   366.27                                    
+--------------------------------------------------------------
+
+Wire load model:   8000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.0015727
+Capacitance    :   0.000312
+Area           :   0.01
+Slope          :   90.6464
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    13.94                                    
+     2    31.80                                    
+     3    51.61                                    
+     4    73.61                                    
+     5    98.05                                    
+     6   125.17                                    
+     7   155.23                                    
+     8   188.46                                    
+     9   225.12                                    
+    10   265.45                                    
+    11   309.71                                    
+    12   358.13                                    
+    13   410.96                                    
+    14   468.46                                    
+    15   530.86                                    
+    16   598.42                                    
+    17   671.38                                    
+    18   749.98                                    
+    19   834.49                                    
+    20   925.13                                    
+--------------------------------------------------------------
+
+Wire load model:   16000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.001282
+Capacitance    :   0.000569
+Area           :   0.01
+Slope          :   108.438
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    15.10                                    
+     2    34.61                                    
+     3    56.42                                    
+     4    80.84                                    
+     5   108.20                                    
+     6   138.79                                    
+     7   172.92                                    
+     8   210.91                                    
+     9   253.07                                    
+    10   299.71                                    
+    11   351.13                                    
+    12   407.64                                    
+    13   469.57                                    
+    14   537.20                                    
+    15   610.87                                    
+    16   690.86                                    
+    17   777.51                                    
+    18   871.11                                    
+    19   971.97                                    
+    20  1080.41                                    
+--------------------------------------------------------------
+
+Wire load model:   35000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.001187
+Capacitance    :   0.00027
+Area           :   0.01
+Slope          :   140.36
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    16.92                                    
+     2    39.03                                    
+     3    64.09                                    
+     4    92.51                                    
+     5   124.73                                    
+     6   161.17                                    
+     7   202.25                                    
+     8   248.42                                    
+     9   300.09                                    
+    10   357.68                                    
+    11   421.63                                    
+    12   492.37                                    
+    13   570.31                                    
+    14   655.89                                    
+    15   749.54                                    
+    16   851.67                                    
+    17   962.72                                    
+    18  1083.11                                    
+    19  1213.28                                    
+    20  1353.64                                    
+--------------------------------------------------------------
+
+Wire load model:   70000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   170.996
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    18.44                                    
+     2    42.77                                    
+     3    70.64                                    
+     4   102.58                                    
+     5   139.15                                    
+     6   180.88                                    
+     7   228.32                                    
+     8   282.00                                    
+     9   342.48                                    
+    10   410.29                                    
+    11   485.98                                    
+    12   570.09                                    
+    13   663.16                                    
+    14   765.74                                    
+    15   878.36                                    
+    16  1001.57                                    
+    17  1135.91                                    
+    18  1281.93                                    
+    19  1440.17                                    
+    20  1611.17                                    
+--------------------------------------------------------------
+
+Wire load model:   140000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   211.204
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    20.20                                    
+     2    47.15                                    
+     3    78.39                                    
+     4   114.63                                    
+     5   156.57                                    
+     6   204.90                                    
+     7   260.33                                    
+     8   323.54                                    
+     9   395.25                                    
+    10   476.14                                    
+    11   566.92                                    
+    12   668.29                                    
+    13   780.94                                    
+    14   905.58                                    
+    15  1042.89                                    
+    16  1193.59                                    
+    17  1358.37                                    
+    18  1537.92                                    
+    19  1732.95                                    
+    20  1944.15                                    
+--------------------------------------------------------------
+
+Wire load model:   280000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   266.705
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    22.32                                    
+     2    52.49                                    
+     3    87.98                                    
+     4   129.72                                    
+     5   178.62                                    
+     6   235.60                                    
+     7   301.59                                    
+     8   377.49                                    
+     9   464.24                                    
+    10   562.75                                    
+    11   673.94                                    
+    12   798.74                                    
+    13   938.05                                    
+    14  1092.80                                    
+    15  1263.92                                    
+    16  1452.31                                    
+    17  1658.90                                    
+    18  1884.61                                    
+    19  2130.35                                    
+    20  2397.06                                    
+--------------------------------------------------------------
+
+Wire load model:   540000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   331.292
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    24.47                                    
+     2    57.99                                    
+     3    98.00                                    
+     4   145.68                                    
+     5   202.21                                    
+     6   268.78                                    
+     7   346.57                                    
+     8   436.76                                    
+     9   540.54                                    
+    10   659.09                                    
+    11   793.58                                    
+    12   945.21                                    
+    13  1115.16                                    
+    14  1304.61                                    
+    15  1514.74                                    
+    16  1746.74                                    
+    17  2001.79                                    
+    18  2281.07                                    
+    19  2585.76                                    
+    20  2917.05                                    
+--------------------------------------------------------------
+
+Wire load model:   1000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   401.5
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    26.53                                    
+     2    63.36                                    
+     3   107.90                                    
+     4   161.65                                    
+     5   226.06                                    
+     6   302.63                                    
+     7   392.82                                    
+     8   498.11                                    
+     9   619.97                                    
+    10   759.88                                    
+    11   919.31                                    
+    12  1099.73                                    
+    13  1302.63                                    
+    14  1529.48                                    
+    15  1781.75                                    
+    16  2060.91                                    
+    17  2368.45                                    
+    18  2705.83                                    
+    19  3074.54                                    
+    20  3476.04                                    
+--------------------------------------------------------------
+
+Wire load model:   2000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   509.815
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    29.34                                    
+     2    70.76                                    
+     3   121.76                                    
+     4   184.28                                    
+     5   260.25                                    
+     6   351.61                                    
+     7   460.30                                    
+     8   588.23                                    
+     9   737.36                                    
+    10   909.60                                    
+    11  1106.91                                    
+    12  1331.20                                    
+    13  1584.41                                    
+    14  1868.48                                    
+    15  2185.34                                    
+    16  2536.93                                    
+    17  2925.17                                    
+    18  3352.00                                    
+    19  3819.36                                    
+    20  4329.17                                    
+--------------------------------------------------------------
+
+Wire load model:   4000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   641.917
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    32.33                                    
+     2    78.77                                    
+     3   137.01                                    
+     4   209.56                                    
+     5   298.91                                    
+     6   407.58                                    
+     7   538.07                                    
+     8   692.87                                    
+     9   874.49                                    
+    10  1085.45                                    
+    11  1328.23                                    
+    12  1605.34                                    
+    13  1919.30                                    
+    14  2272.59                                    
+    15  2667.73                                    
+    16  3107.22                                    
+    17  3593.56                                    
+    18  4129.25                                    
+    19  4716.81                                    
+    20  5358.72                                    
+--------------------------------------------------------------
+
+Wire load model:   8000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.01
+Slope          :   815.176
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    35.74                                    
+     2    88.12                                    
+     3   155.14                                    
+     4   240.05                                    
+     5   346.13                                    
+     6   476.63                                    
+     7   634.82                                    
+     8   823.97                                    
+     9  1047.34                                    
+    10  1308.18                                    
+    11  1609.78                                    
+    12  1955.38                                    
+    13  2348.25                                    
+    14  2791.67                                    
+    15  3288.88                                    
+    16  3843.16                                    
+    17  4457.77                                    
+    18  5135.97                                    
+    19  5881.02                                    
+    20  6696.20                                    
+--------------------------------------------------------------
+
+Wire load model:   tcForQA
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.832926
+Slope          :   30.2854
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1     8.28                                    
+     2    18.49                                    
+     3    29.35                                    
+     4    40.92                                    
+     5    53.23                                    
+     6    66.36                                    
+     7    80.36                                    
+     8    95.27                                    
+     9   111.17                                    
+    10   128.09                                    
+    11   146.10                                    
+    12   165.26                                    
+    13   185.61                                    
+    14   207.22                                    
+    15   230.13                                    
+    16   254.41                                    
+    17   280.11                                    
+    18   307.28                                    
+    19   335.98                                    
+    20   366.27                                    
+--------------------------------------------------------------
+
+Wire load model:   tc8000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.0015727
+Capacitance    :   0.000312
+Area           :   0.720503
+Slope          :   90.6464
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    13.94                                    
+     2    31.80                                    
+     3    51.61                                    
+     4    73.61                                    
+     5    98.05                                    
+     6   125.17                                    
+     7   155.23                                    
+     8   188.46                                    
+     9   225.12                                    
+    10   265.45                                    
+    11   309.71                                    
+    12   358.13                                    
+    13   410.96                                    
+    14   468.46                                    
+    15   530.86                                    
+    16   598.42                                    
+    17   671.38                                    
+    18   749.98                                    
+    19   834.49                                    
+    20   925.13                                    
+--------------------------------------------------------------
+
+Wire load model:   tc16000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.001282
+Capacitance    :   0.000569
+Area           :   0.410482
+Slope          :   108.438
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    15.10                                    
+     2    34.61                                    
+     3    56.42                                    
+     4    80.84                                    
+     5   108.20                                    
+     6   138.79                                    
+     7   172.92                                    
+     8   210.91                                    
+     9   253.07                                    
+    10   299.71                                    
+    11   351.13                                    
+    12   407.64                                    
+    13   469.57                                    
+    14   537.20                                    
+    15   610.87                                    
+    16   690.86                                    
+    17   777.51                                    
+    18   871.11                                    
+    19   971.97                                    
+    20  1080.41                                    
+--------------------------------------------------------------
+
+Wire load model:   tc35000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.001187
+Capacitance    :   0.00027
+Area           :   0.310533
+Slope          :   140.36
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    16.92                                    
+     2    39.03                                    
+     3    64.09                                    
+     4    92.51                                    
+     5   124.73                                    
+     6   161.17                                    
+     7   202.25                                    
+     8   248.42                                    
+     9   300.09                                    
+    10   357.68                                    
+    11   421.63                                    
+    12   492.37                                    
+    13   570.31                                    
+    14   655.89                                    
+    15   749.54                                    
+    16   851.67                                    
+    17   962.72                                    
+    18  1083.11                                    
+    19  1213.28                                    
+    20  1353.64                                    
+--------------------------------------------------------------
+
+Wire load model:   tc70000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.21
+Slope          :   170.996
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    18.44                                    
+     2    42.77                                    
+     3    70.64                                    
+     4   102.58                                    
+     5   139.15                                    
+     6   180.88                                    
+     7   228.32                                    
+     8   282.00                                    
+     9   342.48                                    
+    10   410.29                                    
+    11   485.98                                    
+    12   570.09                                    
+    13   663.16                                    
+    14   765.74                                    
+    15   878.36                                    
+    16  1001.57                                    
+    17  1135.91                                    
+    18  1281.93                                    
+    19  1440.17                                    
+    20  1611.17                                    
+--------------------------------------------------------------
+
+Wire load model:   tc140000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.15
+Slope          :   211.204
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    20.20                                    
+     2    47.15                                    
+     3    78.39                                    
+     4   114.63                                    
+     5   156.57                                    
+     6   204.90                                    
+     7   260.33                                    
+     8   323.54                                    
+     9   395.25                                    
+    10   476.14                                    
+    11   566.92                                    
+    12   668.29                                    
+    13   780.94                                    
+    14   905.58                                    
+    15  1042.89                                    
+    16  1193.59                                    
+    17  1358.37                                    
+    18  1537.92                                    
+    19  1732.95                                    
+    20  1944.15                                    
+--------------------------------------------------------------
+
+Wire load model:   tc280000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.1
+Slope          :   266.705
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    22.32                                    
+     2    52.49                                    
+     3    87.98                                    
+     4   129.72                                    
+     5   178.62                                    
+     6   235.60                                    
+     7   301.59                                    
+     8   377.49                                    
+     9   464.24                                    
+    10   562.75                                    
+    11   673.94                                    
+    12   798.74                                    
+    13   938.05                                    
+    14  1092.80                                    
+    15  1263.92                                    
+    16  1452.31                                    
+    17  1658.90                                    
+    18  1884.61                                    
+    19  2130.35                                    
+    20  2397.06                                    
+--------------------------------------------------------------
+
+Wire load model:   tc540000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.07
+Slope          :   331.292
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    24.47                                    
+     2    57.99                                    
+     3    98.00                                    
+     4   145.68                                    
+     5   202.21                                    
+     6   268.78                                    
+     7   346.57                                    
+     8   436.76                                    
+     9   540.54                                    
+    10   659.09                                    
+    11   793.58                                    
+    12   945.21                                    
+    13  1115.16                                    
+    14  1304.61                                    
+    15  1514.74                                    
+    16  1746.74                                    
+    17  2001.79                                    
+    18  2281.07                                    
+    19  2585.76                                    
+    20  2917.05                                    
+--------------------------------------------------------------
+
+Wire load model:   tc1000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.05
+Slope          :   401.5
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    26.53                                    
+     2    63.36                                    
+     3   107.90                                    
+     4   161.65                                    
+     5   226.06                                    
+     6   302.63                                    
+     7   392.82                                    
+     8   498.11                                    
+     9   619.97                                    
+    10   759.88                                    
+    11   919.31                                    
+    12  1099.73                                    
+    13  1302.63                                    
+    14  1529.48                                    
+    15  1781.75                                    
+    16  2060.91                                    
+    17  2368.45                                    
+    18  2705.83                                    
+    19  3074.54                                    
+    20  3476.04                                    
+--------------------------------------------------------------
+
+Wire load model:   tc2000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.04
+Slope          :   509.815
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    29.34                                    
+     2    70.76                                    
+     3   121.76                                    
+     4   184.28                                    
+     5   260.25                                    
+     6   351.61                                    
+     7   460.30                                    
+     8   588.23                                    
+     9   737.36                                    
+    10   909.60                                    
+    11  1106.91                                    
+    12  1331.20                                    
+    13  1584.41                                    
+    14  1868.48                                    
+    15  2185.34                                    
+    16  2536.93                                    
+    17  2925.17                                    
+    18  3352.00                                    
+    19  3819.36                                    
+    20  4329.17                                    
+--------------------------------------------------------------
+
+Wire load model:   tc4000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.02
+Slope          :   641.917
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    32.33                                    
+     2    78.77                                    
+     3   137.01                                    
+     4   209.56                                    
+     5   298.91                                    
+     6   407.58                                    
+     7   538.07                                    
+     8   692.87                                    
+     9   874.49                                    
+    10  1085.45                                    
+    11  1328.23                                    
+    12  1605.34                                    
+    13  1919.30                                    
+    14  2272.59                                    
+    15  2667.73                                    
+    16  3107.22                                    
+    17  3593.56                                    
+    18  4129.25                                    
+    19  4716.81                                    
+    20  5358.72                                    
+--------------------------------------------------------------
+
+Wire load model:   tc8000000
+Location       :   saed14rvt_tt0p8v25c (library)
+Resistance     :   0.01
+Capacitance    :   0.000143
+Area           :   0.02
+Slope          :   815.176
+
+                             Average   Standard  % Standard
+Fanout   Length   Points         Cap  Deviation   Deviation
+--------------------------------------------------------------
+     1    35.74                                    
+     2    88.12                                    
+     3   155.14                                    
+     4   240.05                                    
+     5   346.13                                    
+     6   476.63                                    
+     7   634.82                                    
+     8   823.97                                    
+     9  1047.34                                    
+    10  1308.18                                    
+    11  1609.78                                    
+    12  1955.38                                    
+    13  2348.25                                    
+    14  2791.67                                    
+    15  3288.88                                    
+    16  3843.16                                    
+    17  4457.77                                    
+    18  5135.97                                    
+    19  5881.02                                    
+    20  6696.20                                    
+--------------------------------------------------------------
+
+Information: Changed wire load model for 'johnson' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : design
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 12:33:35 2025
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db)
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : tt0p8v25c
+    Library : saed14rvt_tt0p8v25c
+    Process :   1.00
+    Temperature :  25.00
+    Voltage :   0.80
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ForQA
+Location       :   saed14rvt_tt0p8v25c
+Resistance     :   0.002067
+Capacitance    :   0.026724
+Area           :   0.01
+Slope          :   30.2854
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     8.28
+     2    18.49
+     3    29.35
+     4    40.92
+     5    53.23
+     6    66.36
+     7    80.36
+     8    95.27
+     9   111.17
+    10   128.09
+    11   146.10
+    12   165.26
+    13   185.61
+    14   207.22
+    15   230.13
+    16   254.41
+    17   280.11
+    18   307.28
+    19   335.98
+    20   366.27
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+ 
+****************************************
+Report : area
+Design : johnson
+Version: S-2021.06-SP4
+Date   : Sun Feb  2 13:32:05 2025
+****************************************
+
+Library(s) Used:
+
+    saed14rvt_tt0p8v25c (File: /net/marysrock.ece.Virginia.EDU/maryisan/users/hwu6hc/synopsys/lab02_design_compiler/ref/db_nldm/saed14rvt_tt0p8v25c.db)
+
+Number of ports:                           13
+Number of nets:                            15
+Number of cells:                           11
+Number of combinational cells:              3
+Number of sequential cells:                 8
+Number of macros/black boxes:               0
+Number of buf/inv:                          3
+Number of references:                       4
+
+Combinational area:                  0.621600
+Buf/Inv area:                        0.621600
+Noncombinational area:              10.300800
+Macro/Black Box area:                0.000000
+Net Interconnect area:               5.537451
+
+Total cell area:                    10.922400
+Total area:                         16.459851
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+johnson                             10.9224    100.0    0.6216    10.3008  0.0000  johnson
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                   0.6216    10.3008  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
