@@ -1,0 +1,1 @@
+# Logic-Synthesis-in-Synopsys-Design-Compiler-DC-and-Design-for-Test-Compiler-DFTC-
